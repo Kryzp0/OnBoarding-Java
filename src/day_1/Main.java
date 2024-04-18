@@ -12,8 +12,8 @@ public class Main {
        // 5 //igualdad.compararStrings();
        // 6 //esPrimo.respuestaPrimo();
        // 7 //recibirArrayNumeros.imprimirSumaImpares(recibirArrayNumeros.inputArray());
-
-
+       // 8 //recibirArrayNumeros.imprimirParesYSumaPrimos(recibirArrayNumeros.inputArray());
+        calculadoraBasica.menuCalculadora();
     }
 }
 

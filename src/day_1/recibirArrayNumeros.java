@@ -13,11 +13,18 @@ public class recibirArrayNumeros {
         return numeros;
     }
     public static void imprimirPares(int[] array){
-        System.out.println("Los números pares son:");
+        boolean hayPares = false;
         for (int numero : array) {
             if (esPar.esPar(numero)){
+                if (!hayPares){
+                    System.out.println("Los números pares son:");
+                    hayPares = true;
+                }
                 System.out.println(numero);
             }
+        }
+        if (!hayPares){
+            System.out.println("No hay números pares");
         }
     }
     public static void imprimirSumaImpares(int[] array){
@@ -30,5 +37,19 @@ public class recibirArrayNumeros {
         }
         System.out.println(suma);
     }
+    public static void imprimirSumaPrimos(int[] array){
+        System.out.println("La suma de los números primos es:");
+        int suma = 0;
+        for (int numero: array){
+            if(esPrimo.esPrimo(numero)){
+                suma+=numero;
+            }
+        }
+        System.out.println(suma);
+    }
 
+    public static void imprimirParesYSumaPrimos(int[] array){
+        imprimirPares(array);
+        imprimirSumaPrimos(array);
+    }
 }

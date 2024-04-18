@@ -12,7 +12,7 @@ public class esPar {
     }
     public static void respuestaPar(){
         Scanner input = new Scanner(System.in);
-        System.out.println("Ingrese una número:");
+        System.out.println("Ingrese un número:");
         int numero = input.nextInt();
         if (esPar(numero)){
             System.out.println("El número "+numero+" es par");
