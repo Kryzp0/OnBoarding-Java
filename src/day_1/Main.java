@@ -13,7 +13,7 @@ public class Main {
        // 6 //esPrimo.respuestaPrimo();
        // 7 //recibirArrayNumeros.imprimirSumaImpares(recibirArrayNumeros.inputArray());
        // 8 //recibirArrayNumeros.imprimirParesYSumaPrimos(recibirArrayNumeros.inputArray());
-        calculadoraBasica.menuCalculadora();
+       // 9-10 //calculadoraBasica.menuCalculadora();
     }
 }
 

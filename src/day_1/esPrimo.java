@@ -24,5 +24,4 @@ public class esPrimo {
         }
         return true;
     }
-
 }
