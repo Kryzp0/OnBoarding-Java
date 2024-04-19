@@ -39,7 +39,6 @@ public class calculadoraBasica {
                     try{
                     Thread.sleep(1000);
                     } catch (InterruptedException e) {
-                        // Manejo de la excepción
                         e.printStackTrace();
                     }
                     break;
