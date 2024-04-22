@@ -3,13 +3,13 @@ package day_2;
 import java.util.Arrays;
 
 public class Persona {
-    String nombre;
-    String apellido;
-    String DNI;
-    int edad;
-    double altura;
-    boolean casado;
-    String[] mascotas;
+    private String nombre;
+    private String apellido;
+    private String DNI;
+    private int edad;
+    private double altura;
+    private boolean casado;
+    private String[] mascotas;
 
     public String presentacion(){
         String mensajeCasado = this.casado ? "Estoy casado/a." : "No estoy casado/a";
