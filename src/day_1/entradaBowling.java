@@ -4,7 +4,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class entradaBowling {
-    int ganancia = 0;
+    static int ganancia = 0;
 
     public static void menuEntrada() {
         int cantidad = 500;
@@ -22,7 +22,7 @@ public class entradaBowling {
                     aux = false;
                     break;
                 case 1:
-                    String acceso = inputDatosPersonales(plata);
+                    String acceso = inputDatosPersonales();
                     if (acceso.equals("Acceso permitido")) {
                         System.out.println(acceso);
                         cantidad--;
@@ -44,7 +44,7 @@ public class entradaBowling {
                     }
                     break;
                 case 3:
-                    System.out.println("El dinero recaudado es: " + plata.ganancia);
+                    System.out.println("El dinero recaudado es: " + ganancia);
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
@@ -65,7 +65,7 @@ public class entradaBowling {
         while (aux);
     }
 
-    public static String inputDatosPersonales(entradaBowling plata) {
+    public static String inputDatosPersonales() {
         String entrada;
         boolean aux = true;
         Scanner input = new Scanner(System.in);
@@ -80,7 +80,7 @@ public class entradaBowling {
             do {
                 System.out.println("Posee una entrada?");
                 entrada = input.nextLine().toLowerCase();
-                if (!tipoDeEntrada(entrada, plata)) {
+                if (!tipoDeEntrada(entrada)) {
                     return "Acceso permitido";
                 } else {
                     aux = false;
@@ -90,7 +90,7 @@ public class entradaBowling {
         return "Operación cancelada";
     }
 
-    public static boolean tipoDeEntrada(String respuesta, entradaBowling plata) {
+    public static boolean tipoDeEntrada(String respuesta) {
         Scanner input = new Scanner(System.in);
         if (Objects.equals(respuesta, "si")) {
             System.out.println(("Qué tipo de entrada posee? VIP o Descuento"));
@@ -103,10 +103,10 @@ public class entradaBowling {
                 String comprarEntrada = input.next().toLowerCase();
                 switch (comprarEntrada) {
                     case "vip":
-                        plata.ganancia += 1000;
+                        ganancia += 1000;
                         break;
                     case "normal":
-                        plata.ganancia += 750;
+                        ganancia += 750;
                         break;
                     case "cancelar":
                         return true;
@@ -123,10 +123,10 @@ public class entradaBowling {
             String comprarEntrada = input.next().toLowerCase();
             switch (comprarEntrada) {
                 case "vip":
-                    plata.ganancia += 2000;
+                    ganancia += 2000;
                     break;
                 case "normal":
-                    plata.ganancia += 1500;
+                    ganancia += 1500;
                     break;
                 case "cancelar":
                     return true;
