@@ -56,9 +56,9 @@ public class calculadoraBasica {
             float numero1 = input.nextFloat();
             System.out.println("Ingrese el segundo número que desea sumar");
             float numero2 = input.nextFloat();
-            float resultado = numero1 - numero2;
+            float resultado = numero1 + numero2;
             System.out.println("La resultado total es: " + resultado);
-            System.out.println("Para volver al menú ingrese 1 y para realizar otra resultado ingrese cualquier otro número");
+            System.out.println("Para volver al menú ingrese 1 y para realizar suma ingrese cualquier otro número");
             byte opcion = input.nextByte();
             if (opcion == 1) {
                 aux = false;

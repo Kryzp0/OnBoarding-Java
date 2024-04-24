@@ -14,7 +14,7 @@ public class Main {
        // 7 //recibirArrayNumeros.imprimirSumaImpares(recibirArrayNumeros.inputArray());
        // 8 //recibirArrayNumeros.imprimirParesYSumaPrimos(recibirArrayNumeros.inputArray());
        // 9-10 //calculadoraBasica.menuCalculadora();
-       // 11-12 // entradaBowling.menuEntrada();
+       // 11-12 //entradaBowling.menuEntrada();
     }
 }
 
