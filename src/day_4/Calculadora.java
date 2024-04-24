@@ -16,7 +16,7 @@ public class Calculadora {
         while (aux);
     }
 
-    public boolean seleccionarOpcion() {
+    private boolean seleccionarOpcion() {
         byte opcion = input.nextByte();
         boolean aux;
         switch (opcion) {
